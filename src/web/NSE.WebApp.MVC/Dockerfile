@@ -3,32 +3,32 @@
 #essas fases são o chamado Multi Stage Build, 4 imagens, cada uma para um Stage
 
 # Esta fase é usada durante a execução no VS no modo rápido (Padrão para a configuração de Depuração) - Base
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base #De qual imagem a imagem que estou construindo vai derivar (imagem baseada em Linux que tem o runtime do asp.net8.0)
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base 
 USER $APP_UID
-WORKDIR /app #diretório de onde vc vai trabalhar - pasta app dentro da parte de escrita da imagem
-EXPOSE 8080 #portas que minha máquina consegue "conversar" com o container
+WORKDIR /app 
+EXPOSE 8080 
 EXPOSE 8081
 
 
 # Esta fase é usada para compilar o projeto de serviço - Build
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build #(imagem linux que contem o sdk8.0)
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build 
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["src/web/NSE.WebApp.MVC/NSE.WebApp.MVC.csproj", "src/web/NSE.WebApp.MVC/"]#copiando o csproj da máquina local pra pasta da imagem
-COPY ["src/building blocks/NSE.Core/NSE.Core.csproj", "src/building blocks/NSE.Core/"]
-COPY ["src/building blocks/NSE.WebAPI.Core/NSE.WebAPI.Core.csproj", "src/building blocks/NSE.WebAPI.Core/"]
-RUN dotnet restore "./src/web/NSE.WebApp.MVC/NSE.WebApp.MVC.csproj" # restore de todos os pacotes necessário pra poder compilar a app
-COPY . . #copiar tudo de tudo por workdir
-WORKDIR "/src/src/web/NSE.WebApp.MVC" #setando o workdir pra dentro da pasta do projeto
-RUN dotnet build "./NSE.WebApp.MVC.csproj" -c $BUILD_CONFIGURATION -o /app/build #vai rodar o comando dotnet build, o parâmetro BUILD_CONFIGURATION ele vai falar que é uma versão como se fosse pra rodar em produção e o -o de output vai apontar pra /app/build(ou criar) onde vai jogar somente os binários da compilação
+COPY ["./web/NSE.WebApp.MVC/NSE.WebApp.MVC.csproj", "web/NSE.WebApp.MVC/"]
+COPY ["./building blocks/NSE.Core/NSE.Core.csproj", "building blocks/NSE.Core/"]
+COPY ["./building blocks/NSE.WebAPI.Core/NSE.WebAPI.Core.csproj", "building blocks/NSE.WebAPI.Core/"]
+RUN dotnet restore "web/NSE.WebApp.MVC/NSE.WebApp.MVC.csproj" 
+COPY . . 
+WORKDIR "web/NSE.WebApp.MVC" 
+RUN dotnet build "NSE.WebApp.MVC.csproj" -c $BUILD_CONFIGURATION -o /app/build 
 
 # Esta fase é usada para publicar o projeto de serviço a ser copiado para a fase final
-FROM build AS publish #(imagem com base na imagem build)
+FROM build AS publish 
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./NSE.WebApp.MVC.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false #vai rodar o comando dotnet publish, com o parâmetro BUILD_CONFIGURATION e -o apontando para /app/publish
+RUN dotnet publish "NSE.WebApp.MVC.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false 
 
 # Esta fase é usada na produção ou quando executada no VS no modo normal (padrão quando não está usando a configuração de Depuração)
-FROM base AS final #(imagem com base na imagem base)
+FROM base AS final 
 WORKDIR /app
-COPY --from=publish /app/publish . #copiar tudo do container publish para minha pasta do workdir app/publish
-ENTRYPOINT ["dotnet", "NSE.WebApp.MVC.dll"] #chamar o comando dotnet e falar pra ele rodar essa dll
+COPY --from=publish /app/publish . 
+ENTRYPOINT ["dotnet", "NSE.WebApp.MVC.dll"] 
