@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NSE.Pedidos.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7f109301060938de53218229f4bb9896afef4b5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a501b0002e8784e119a1e7bb3ff6c8b851324f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("NSE.Pedidos.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NSE.Pedidos.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
