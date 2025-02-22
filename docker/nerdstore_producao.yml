@@ -1,4 +1,4 @@
-version: "3"
+version: "3.8"
 
 services: 
   rabbitmq:
@@ -36,4 +36,4 @@ services:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_URLS=http://*:5301
     depends_on:
-      - rabbitmq 
+      - rabbitmq
