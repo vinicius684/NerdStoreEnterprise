@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Localization;
+﻿using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.Localization;
 using NSE.Identidade.API.Extensions;
 using NSE.WebApp.MVC.Extensions;
 using System.Globalization;
@@ -11,6 +12,12 @@ namespace NSE.WebApp.MVC.Configuration
         {
             services.AddControllersWithViews();
 
+            services.Configure<ForwardedHeadersOptions>(options =>
+            {
+                options.ForwardedHeaders =
+                    ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
+            });
+
             services.Configure<AppSettings>(configuration);
 
             return services;
@@ -18,6 +25,7 @@ namespace NSE.WebApp.MVC.Configuration
 
         public static IApplicationBuilder UseMvcConfiguration(this WebApplication app, IWebHostEnvironment env) //Exthensionmethod de app
         {
+            app.UseForwardedHeaders();
             //if (!env.IsDevelopment())
             //{
             //    app.UseExceptionHandler("/erro/500");//Captura exceções não tratadas que podem ocorrer durante a execução da requisição e redireciona para uma página de erro genérica

@@ -139,3 +139,16 @@ services:
       - rabbitmq
       - sql-server
       - api-identidade
+
+  nerdstore-server:
+    image: desenvolvedorio/nerdstore-server:latest
+    container_name: nerdstore-server    
+    build: 
+        context: ./
+        dockerfile: ./nginx/Dockerfile 
+    restart: always 
+    ports:
+        - "80:80"
+        - "443:443"
+    depends_on:
+        - web-mvc
