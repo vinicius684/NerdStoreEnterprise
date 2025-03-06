@@ -1607,20 +1607,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CarrinhoController.cs",
-              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_9AspNetEnterpriseApplications\\NerdStoreEnterprise\\src\\api gateways\\NSE.Bff.Compras\\Controllers\\CarrinhoController.cs",
-              "RelativeDocumentMoniker": "src\\api gateways\\NSE.Bff.Compras\\Controllers\\CarrinhoController.cs",
-              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_9AspNetEnterpriseApplications\\NerdStoreEnterprise\\src\\api gateways\\NSE.Bff.Compras\\Controllers\\CarrinhoController.cs",
-              "RelativeToolTip": "src\\api gateways\\NSE.Bff.Compras\\Controllers\\CarrinhoController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADAAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T15:36:06.575Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -1655,8 +1643,7 @@
               "RelativeToolTip": "src\\services\\NSE.Carrinho.API\\appsettings.Production.json",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-25T00:28:41.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T00:28:41.497Z"
             },
             {
               "$type": "Document",
@@ -1678,10 +1665,22 @@
               "RelativeDocumentMoniker": "src\\web\\NSE.WebApp.MVC\\Configuration\\WebAppConfig.cs",
               "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_9AspNetEnterpriseApplications\\NerdStoreEnterprise\\src\\web\\NSE.WebApp.MVC\\Configuration\\WebAppConfig.cs",
               "RelativeToolTip": "src\\web\\NSE.WebApp.MVC\\Configuration\\WebAppConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-26T19:27:48.947Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CarrinhoController.cs",
+              "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_9AspNetEnterpriseApplications\\NerdStoreEnterprise\\src\\api gateways\\NSE.Bff.Compras\\Controllers\\CarrinhoController.cs",
+              "RelativeDocumentMoniker": "src\\api gateways\\NSE.Bff.Compras\\Controllers\\CarrinhoController.cs",
+              "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_9AspNetEnterpriseApplications\\NerdStoreEnterprise\\src\\api gateways\\NSE.Bff.Compras\\Controllers\\CarrinhoController.cs",
+              "RelativeToolTip": "src\\api gateways\\NSE.Bff.Compras\\Controllers\\CarrinhoController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADAAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T15:36:06.575Z"
             },
             {
               "$type": "Document",
