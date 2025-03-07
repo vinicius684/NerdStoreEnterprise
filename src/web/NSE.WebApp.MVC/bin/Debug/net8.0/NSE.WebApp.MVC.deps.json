@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "NSE.WebApp.MVC/1.0.0": {
         "dependencies": {
+          "Grpc.Core.Api": "2.67.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.8",
           "Microsoft.Extensions.Http.Polly": "8.0.8",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.20.1",
@@ -24,6 +25,14 @@
           "lib/net8.0/FluentValidation.dll": {
             "assemblyVersion": "11.0.0.0",
             "fileVersion": "11.9.2.0"
+          }
+        }
+      },
+      "Grpc.Core.Api/2.67.0": {
+        "runtime": {
+          "lib/netstandard2.1/Grpc.Core.Api.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.67.0.0"
           }
         }
       },
@@ -333,6 +342,13 @@
       "sha512": "sha512-XeHp9LvFvu1fsQ/NvDCymV02GOCB1nz7ZUhfpI3uMhCcHTkV1K5bMkv+Nc/kuNYyAsX5+5bcmUanIEMd5QN+Eg==",
       "path": "fluentvalidation/11.9.2",
       "hashPath": "fluentvalidation.11.9.2.nupkg.sha512"
+    },
+    "Grpc.Core.Api/2.67.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cL1/2f8kc8lsAGNdfCU25deedXVehhLA6GXKLLN4hAWx16XN7BmjYn3gFU+FBpir5yJynvDTHEypr3Tl0j7x/Q==",
+      "path": "grpc.core.api/2.67.0",
+      "hashPath": "grpc.core.api.2.67.0.nupkg.sha512"
     },
     "MediatR/12.4.0": {
       "type": "package",
