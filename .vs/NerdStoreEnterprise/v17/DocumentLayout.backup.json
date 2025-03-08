@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_9AspNetEnterpriseApplications\\NerdStoreEnterprise\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{92B8C9E4-8D33-4F02-9569-55E5A92D3066}|src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_9aspnetenterpriseapplications\\nerdstoreenterprise\\src\\web\\nse.webapp.mvc\\configuration\\webappconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92B8C9E4-8D33-4F02-9569-55E5A92D3066}|src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj|solutionrelative:src\\web\\nse.webapp.mvc\\configuration\\webappconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{13EA7195-3150-4208-896E-CAA19949466D}|src\\services\\NSE.Pedidos.Infra\\NSE.Pedidos.Infra.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_9aspnetenterpriseapplications\\nerdstoreenterprise\\src\\services\\nse.pedidos.infra\\nse.pedidos.infra.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{13EA7195-3150-4208-896E-CAA19949466D}|src\\services\\NSE.Pedidos.Infra\\NSE.Pedidos.Infra.csproj|solutionrelative:src\\services\\nse.pedidos.infra\\nse.pedidos.infra.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DFF1ACA0-4867-49DD-A50C-F26B9453EF01}|src\\services\\NSE.Pedidos.API\\NSE.Pedidos.API.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_9aspnetenterpriseapplications\\nerdstoreenterprise\\src\\services\\nse.pedidos.api\\nse.pedidos.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{DFF1ACA0-4867-49DD-A50C-F26B9453EF01}|src\\services\\NSE.Pedidos.API\\NSE.Pedidos.API.csproj|solutionrelative:src\\services\\nse.pedidos.api\\nse.pedidos.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92B8C9E4-8D33-4F02-9569-55E5A92D3066}|src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_9aspnetenterpriseapplications\\nerdstoreenterprise\\src\\web\\nse.webapp.mvc\\configuration\\webappconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92B8C9E4-8D33-4F02-9569-55E5A92D3066}|src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj|solutionrelative:src\\web\\nse.webapp.mvc\\configuration\\webappconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4ADA5BAC-D652-4056-994D-722465353895}|src\\services\\NSE.Carrinho.API\\NSE.Carrinho.API.csproj|c:\\users\\vpinh\\desktop\\desenvolvedor.io\\_9aspnetenterpriseapplications\\nerdstoreenterprise\\src\\services\\nse.carrinho.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -1607,7 +1607,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -1623,13 +1623,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "WebAppConfig.cs",
               "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_9AspNetEnterpriseApplications\\NerdStoreEnterprise\\src\\web\\NSE.WebApp.MVC\\Configuration\\WebAppConfig.cs",
               "RelativeDocumentMoniker": "src\\web\\NSE.WebApp.MVC\\Configuration\\WebAppConfig.cs",
               "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_9AspNetEnterpriseApplications\\NerdStoreEnterprise\\src\\web\\NSE.WebApp.MVC\\Configuration\\WebAppConfig.cs",
               "RelativeToolTip": "src\\web\\NSE.WebApp.MVC\\Configuration\\WebAppConfig.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBIAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-26T19:27:48.947Z"
             },
@@ -1647,7 +1647,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "NSE.Pedidos.API.csproj",
               "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_9AspNetEnterpriseApplications\\NerdStoreEnterprise\\src\\services\\NSE.Pedidos.API\\NSE.Pedidos.API.csproj",
               "RelativeDocumentMoniker": "src\\services\\NSE.Pedidos.API\\NSE.Pedidos.API.csproj",
@@ -1655,12 +1655,11 @@
               "RelativeToolTip": "src\\services\\NSE.Pedidos.API\\NSE.Pedidos.API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-21T14:08:36.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T14:08:36.786Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "NSE.Pedidos.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_9AspNetEnterpriseApplications\\NerdStoreEnterprise\\src\\services\\NSE.Pedidos.Domain\\NSE.Pedidos.Domain.csproj",
               "RelativeDocumentMoniker": "src\\services\\NSE.Pedidos.Domain\\NSE.Pedidos.Domain.csproj",
@@ -1668,12 +1667,11 @@
               "RelativeToolTip": "src\\services\\NSE.Pedidos.Domain\\NSE.Pedidos.Domain.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-11T13:21:40.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T13:21:40.105Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "NSE.Pedidos.Infra.csproj",
               "DocumentMoniker": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_9AspNetEnterpriseApplications\\NerdStoreEnterprise\\src\\services\\NSE.Pedidos.Infra\\NSE.Pedidos.Infra.csproj",
               "RelativeDocumentMoniker": "src\\services\\NSE.Pedidos.Infra\\NSE.Pedidos.Infra.csproj",
@@ -1681,8 +1679,7 @@
               "RelativeToolTip": "src\\services\\NSE.Pedidos.Infra\\NSE.Pedidos.Infra.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-25T12:52:08.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T12:52:08.037Z"
             },
             {
               "$type": "Document",
@@ -2054,8 +2051,7 @@
               "RelativeToolTip": "src\\services\\NSE.Catalogo.API\\NSE.Catalogo.API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-02T16:56:32.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T16:56:32.754Z"
             },
             {
               "$type": "Document",
@@ -2151,8 +2147,7 @@
               "RelativeToolTip": "src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-26T14:49:48.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-26T14:49:48.079Z"
             },
             {
               "$type": "Document",
@@ -2560,8 +2555,7 @@
               "RelativeToolTip": "src\\api gateways\\NSE.Bff.Compras\\NSE.Bff.Compras.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-10T15:13:41.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T15:13:41.457Z"
             },
             {
               "$type": "Document",
@@ -2573,8 +2567,7 @@
               "RelativeToolTip": "src\\services\\NSE.Carrinho.API\\NSE.Carrinho.API.csproj",
               "ViewState": "AgIAAAcAAAAAAAAAAABBwBcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-02T21:09:19.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-02T21:09:19.658Z"
             },
             {
               "$type": "Document",
@@ -2658,8 +2651,7 @@
               "RelativeToolTip": "src\\services\\NSE.Clientes.API\\NSE.Clientes.API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-02T22:19:56.324Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T22:19:56.324Z"
             },
             {
               "$type": "Document",
@@ -2671,8 +2663,7 @@
               "RelativeToolTip": "src\\services\\NSE.Identidade.API\\NSE.Identidade.API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-03T00:06:55.184Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T00:06:55.184Z"
             },
             {
               "$type": "Document",
@@ -3095,8 +3086,7 @@
               "RelativeToolTip": "src\\building blocks\\NSE.WebAPI.Core\\NSE.WebAPI.Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-02T18:18:22.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T18:18:22.353Z"
             },
             {
               "$type": "Document",
@@ -4323,8 +4313,7 @@
               "RelativeToolTip": "src\\services\\NSE.Pagamentos.API\\NSE.Pagamentos.API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-30T20:55:36.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T20:55:36.792Z"
             },
             {
               "$type": "Document",
@@ -4670,8 +4659,7 @@
               "RelativeToolTip": "src\\building blocks\\NSE.Core\\NSE.Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-25T15:21:51.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T15:21:51.663Z"
             },
             {
               "$type": "Document",
@@ -5529,8 +5517,7 @@
               "RelativeToolTip": "src\\building blocks\\NSE.MessageBus\\NSE.MessageBus.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-20T13:53:25.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-20T13:53:25.612Z"
             },
             {
               "$type": "Document",
@@ -5658,8 +5645,7 @@
               "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_9AspNetEnterpriseApplications\\NerdStoreEnterprise\\src\\services\\NSE.Catalogo.API\\NSE.Catalogo.API.csproj",
               "RelativeToolTip": "src\\services\\NSE.Catalogo.API\\NSE.Catalogo.API.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-02T19:45:06.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-02T19:45:06.879Z"
             },
             {
               "$type": "Document",
@@ -5791,8 +5777,7 @@
               "ToolTip": "C:\\Users\\vpinh\\Desktop\\Desenvolvedor.io\\_9AspNetEnterpriseApplications\\NerdStoreEnterprise\\src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj",
               "RelativeToolTip": "src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-27T13:00:49.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T13:00:49.855Z"
             },
             {
               "$type": "Document",

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.DataAnnotations;
+using NSE.WebAPI.Core.Extensions;
 using NSE.WebAPI.Core.Usuario;
 using NSE.WebApp.MVC.Extensions;
 using NSE.WebApp.MVC.Services;
@@ -22,6 +23,7 @@ namespace NSE.WebApp.MVC.Configuration
             services.AddHttpClient<IAutenticacaoService, AutenticacaoService>()
                 .AddHttpMessageHandler<HttpClientAuthorizationDelegatingHandler>()
                  .AddPolicyHandler(PollyExtensions.EsperarTentar())
+                 .AllowSelfSignedCertificate()
                  .AddTransientHttpErrorPolicy(
                      p => p.CircuitBreakerAsync(5, TimeSpan.FromSeconds(30)));
 
@@ -30,18 +32,21 @@ namespace NSE.WebApp.MVC.Configuration
                                                                                    //.AddTransientHttpErrorPolicy( 
                                                                                    // p => p.WaitAndRetryAsync(3, _ => TimeSpan.FromMilliseconds(600))); 1 - Policy simples Padrão
                  .AddPolicyHandler(PollyExtensions.EsperarTentar()) //2 - Policy Handle
+                 .AllowSelfSignedCertificate()
                  .AddTransientHttpErrorPolicy(
                      p => p.CircuitBreakerAsync(5, TimeSpan.FromSeconds(30)));//Circuit Breaker - Parâmetros n vezs que a app deve falhar(pega multiplos usuários) e o tempo que deve esperar até tentar novamente
 
             services.AddHttpClient<IComprasBffService, ComprasBffService>()
                 .AddHttpMessageHandler<HttpClientAuthorizationDelegatingHandler>()
                  .AddPolicyHandler(PollyExtensions.EsperarTentar())
+                 .AllowSelfSignedCertificate()
                  .AddTransientHttpErrorPolicy(
                      p => p.CircuitBreakerAsync(5, TimeSpan.FromSeconds(30)));
 
             services.AddHttpClient<IClienteService, ClienteService>()
                .AddHttpMessageHandler<HttpClientAuthorizationDelegatingHandler>()
                .AddPolicyHandler(PollyExtensions.EsperarTentar())
+               .AllowSelfSignedCertificate()
                .AddTransientHttpErrorPolicy(
                    p => p.CircuitBreakerAsync(5, TimeSpan.FromSeconds(30)));
             #endregion
