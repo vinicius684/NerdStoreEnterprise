@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3"
 
 services: 
   rabbitmq:
@@ -20,16 +20,21 @@ services:
 
   web-mvc:
     image: desenvolvedorio/nerdstore-web-mvc-ecommerce:latest
-    container_name: nerdstore-web-mvc-ecommerce
+    #container_name: nerdstore-web-mvc-ecommerce
     build:
       context: ../src
       dockerfile: ./web/NSE.WebApp.MVC/Dockerfile
-    restart: always
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_URLS=http://*:5001
-    volumes:
-      - ./certs:/https:ro
+    volumes: 
+      - dpkeys:/var/data_protection_keys/ 
+    deploy:
+      replicas: 4  # Garante 4 instâncias
+      update_config:
+        parallelism: 2
+      restart_policy:
+        condition: any
     depends_on:
       - api-catalogo
       - api-identidade
@@ -182,3 +187,6 @@ services:
         - "443:443"
     depends_on:
         - web-mvc
+
+volumes:
+    dpkeys:

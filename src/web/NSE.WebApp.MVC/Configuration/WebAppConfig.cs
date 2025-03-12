@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.HttpOverrides;
+﻿using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Localization;
 using NSE.Identidade.API.Extensions;
 using NSE.WebApp.MVC.Extensions;
 using System.Globalization;
+
 
 namespace NSE.WebApp.MVC.Configuration
 {
@@ -11,6 +13,10 @@ namespace NSE.WebApp.MVC.Configuration
         public static IServiceCollection AddMvcConfiguration(this IServiceCollection services, IConfiguration configuration) //ExtensionMethod de Services
         {
             services.AddControllersWithViews();
+
+            services.AddDataProtection()
+                .PersistKeysToFileSystem(new DirectoryInfo(@"/var/data_protection_keys/"))
+                .SetApplicationName("NerdStoreEnterprise");
 
             services.Configure<ForwardedHeadersOptions>(options =>
             {
@@ -45,7 +51,7 @@ namespace NSE.WebApp.MVC.Configuration
             app.UseIdentityConfiguration();
 
             var supportedCultures = new[] { new CultureInfo("pt-BR") }; //se quisesse dar suporte a várias culturas, acultura escolhida poderia estar sendo passada via parâmetro na sua rota ou persistida num cookie
-            app.UseRequestLocalization(new RequestLocalizationOptions 
+            app.UseRequestLocalization(new RequestLocalizationOptions
             {
                 DefaultRequestCulture = new RequestCulture("pt-BR"),
                 SupportedCultures = supportedCultures,
