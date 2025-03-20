@@ -145,7 +145,7 @@ namespace NSE.WebApp.MVC.Services
         public bool TokenExpirado() //saber se o jwt está expirado, espera-se que sim...
         {
             var jwt = _user.ObterUserToken();
-            if (jwt is null) return false;
+            if (string.IsNullOrWhiteSpace(jwt)) return false;
 
             var token = ObterTokenFormatado(jwt);
             return token.ValidTo.ToLocalTime() < DateTime.Now;
